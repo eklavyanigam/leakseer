@@ -1,6 +1,6 @@
 # Leakseer
 
-A command-line tool, written in Go, that scans files for leaked secrets such as API keys, tokens and private keys. The goal is to go further than generic scanners by adding rules for AI tooling: MCP/AI tool configs, `.env` files and Jupyter notebooks.
+A command-line tool, written in Go, that scans files and folders for leaked secrets such as API keys and tokens. Its focus is AI tooling: besides generic secret formats, it checks `.env` files and MCP/AI tool configs, where keys often end up by accident.
 
 > **Status: in progress.** This is a learning project, built one stage at a time. Not ready for real use yet.
 
@@ -11,14 +11,14 @@ A command-line tool, written in Go, that scans files for leaked secrets such as 
 
 ## Progress
 - [x] Project setup
-- [ ] Scan a single file (in progress: line parsing and masking done, detection next)
+- [ ] Scan a single file (in progress: line parsing, masking and the first detector are being built)
 - [ ] Recursive folder scanning
 - [ ] Pluggable detectors
 - [ ] Concurrent scanning
-- [ ] AI/MCP config, `.env` and notebook rules
-- [ ] False-positive handling
+- [ ] `.env` and MCP config rules
+- [ ] False-positive handling (inline ignore and ignore file)
 - [ ] CLI flags, JSON output and exit codes
-- [ ] Release: docs, CI, binaries
+- [ ] Docs, tests and CI
 
 ## Usage
 Not available yet.
